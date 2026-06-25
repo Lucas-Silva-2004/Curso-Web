@@ -13,10 +13,11 @@
             color: white;
             padding: 5px;
         }
-
+        
         .grid {
+            height: 100vh;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr; /* cada coluna ocupa 1 fração do espaço disponível */
+            grid-template-columns: 300px 1fr 1fr; /* cada coluna ocupa 1 fração do espaço disponível */
             column-gap: 20px; /* Espaçamento entre colunas */
             row-gap: 20px; /* Espaçamento entre linhas */
         }
@@ -27,7 +28,14 @@
 
         .item1 {
             grid-column-start: 1;
-            grid-column-end: 3; /* Mescla a primeira coluna com a segunda que finaliza na terceira linha */
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .item2 {
+            grid-row-start: 4;
+            grid-row-end: 9;
         }
     </style>
 </head>
