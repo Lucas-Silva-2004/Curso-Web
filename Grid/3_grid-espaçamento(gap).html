@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linhas Grid</title>
+    <title>Espaçamento Grid (gap)</title>
 
     <style>
         body {
@@ -19,6 +19,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr; /* cada coluna ocupa 1 fração do espaço disponível */
             grid-template-rows: 1fr 2fr 4fr 1fr;
+            column-gap: 20px; /* Espaçamento entre colunas */
+            row-gap: 20px; /* Espaçamento entre linhas */
         }
 
         .grid > div {

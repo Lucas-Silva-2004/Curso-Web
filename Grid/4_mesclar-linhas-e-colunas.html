@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linhas Grid</title>
+    <title>Mesclar Linhas e Colunas</title>
 
     <style>
         body {
@@ -15,14 +15,19 @@
         }
 
         .grid {
-            height: 100vh;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr; /* cada coluna ocupa 1 fração do espaço disponível */
-            grid-template-rows: 1fr 2fr 4fr 1fr;
+            column-gap: 20px; /* Espaçamento entre colunas */
+            row-gap: 20px; /* Espaçamento entre linhas */
         }
 
         .grid > div {
             border: 1px solid yellow;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3; /* Mescla a primeira coluna com a segunda que finaliza na terceira linha */
         }
     </style>
 </head>
