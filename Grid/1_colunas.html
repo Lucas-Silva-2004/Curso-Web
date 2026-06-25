@@ -16,8 +16,11 @@
         .grid {
             display: grid;
             /* grid-template-columns: 200px 200px 200px; */ /* 3 colunas de 200px */
-            grid-template-columns: 40% 40% 20%; /* 2 colunas de 40% e 1 coluna de 20% */
-        }
+            /* grid-template-columns: 40% 40% 20%; 2 colunas de 40% e 1 coluna de 20% */
+            /* grid-template-columns: repeat(3, 33%); 3 colunas de 33%. O repeat é mais prático para a criação de diversas colunas do mesmo tamanho */
+            /* grid-template-columns: repeat(2, 20%) 200px; 2 colunas de 20% e 1 coluna de 200px */
+            /* grid-template-columns: 1fr 1fr 1fr; 3 colunas de tamanho igual, cada uma ocupando 1 fração do espaço disponível */
+            grid-template-columns: 20% 1fr 1fr; /* 1 coluna de 20% e 2 colunas de tamanho igual, cada uma ocupando 1 fração do espaço disponível */
 
         .grid > div {
             border: 1px solid yellow;
