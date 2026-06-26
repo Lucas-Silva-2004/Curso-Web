@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            background-color: #000000;
+            color: white;
+            padding: 5px;
+        }
+        
+        .grid {
+            column-gap: 20px;
+            row-gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Definindo duas colunas */
+            grid-template-areas: /* Aqui definimos a ordem das áreas na grade */
+                'navegacao cabecalho'
+                'navegacao principal'
+                'navegacao rodape';
+        }
+
+        header, nav, main, footer {
+            border: 3px solid yellow;
+        }
+
+        /* Definindo os nomes das áreas com grid-area */
+        header {
+            grid-area: cabecalho;
+        }
+
+        nav {
+            grid-area: navegacao;
+        }
+
+        main {
+            grid-area: principal;
+        }
+
+        footer {
+            grid-area: rodape;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header>Cabeçalho</header>
+        <nav>
+            Home | Produtos | Contato | Cadastro
+        </nav>
+        <main>
+            <h2>Conteúdo do Sistema</h2>
+            <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </main>
+        <footer>Lucas Silva, 2026</footer>
+    </div>
+</body>
+</html>
