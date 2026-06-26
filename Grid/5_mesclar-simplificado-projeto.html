@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclar Simplificado</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3rem;
+            background-color: #000000;
+            color: white;
+            padding: 5px;
+        }
+        
+        .grid {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: [inicio] 1fr [b] 1fr [c] 1fr [fim]; /* Podemos nomear as linhas */
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        .grid > div {
+            border: 8px solid yellow;
+        }
+
+        .item1 {
+            /* grid-column: 1 / 3; */ /* Também podemos definir o start e end de forma simplificada */
+            grid-column: inicio / fim; /* Podemos utilizar os nomes das linhas ao invés dos seus números */
+        }
+
+        .item2 {
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+            <div class="item8">8</div>
+            <div class="item9">9</div>
+            <div class="item10">10</div>
+            <div class="item11">11</div>
+            <div class="item12">12</div>
+        </div>
+    </main>
+</body>
+</html>
