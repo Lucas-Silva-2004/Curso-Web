@@ -1,17 +1,30 @@
-// NULL
-/* Representa a ausência intencional de qualquer valor */
-var teste = null;
+var a = 10;
+var b = 20;
+var c = null;
 
-// Undefined
-/* Representa a ausência de valor (não inicializado) */
-var teste2;
+document.write('A: ' + a + '<br />')
+document.write('B: ' + b + '<br />')
+document.write('C: ' + c + '<br />')
 
-console.log(teste);
+document.write('<hr />')
 
-var teste = 'Teste realizado com sucesso';
+// Lógica de inversão de valores das variáveis
+var c = b;
+console.log('O valor de B foi atribuído ao C');
 
-console.log(teste);
+var b = a;
+console.log('O valor de A foi atribuído ao B');
 
-var teste = 127.75;
+var a = c;
+console.log('O valor de C foi atribuído ao A');
 
-console.log(teste);
+var c = null;
+console.log('O valor null voltou ao C');
+
+console.log('Os valores foram invertidos com sucesso');
+
+// Exibição dos valores alterados
+
+document.write('A: ' + a + '<br />');
+document.write('B: ' + b + '<br />');
+document.write('C: ' + c + '<br />');
