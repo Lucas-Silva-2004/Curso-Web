@@ -1,0 +1,11 @@
+--- Declarar variáveis ---
+    var nome = "Lucas" ----- let nome = "Lucas"; --- ou const nome = "Lucas";
+
+--- Concatenação ---
+    "Olá, " + nome + "!" ----- \Olá, ${nome}!
+
+--- Funções ---
+    function somar(a, b) {...} ----- const somar = (a, b) => {...}
+
+--- Exibir texto no body ---
+    document.write() ----- .textContent ou .innerHTML
