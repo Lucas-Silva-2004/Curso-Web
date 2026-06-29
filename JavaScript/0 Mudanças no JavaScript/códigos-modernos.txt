@@ -9,3 +9,33 @@
 
 --- Exibir texto no body ---
     document.write() ----- .textContent ou .innerHTML
+
+--- Método array ---
+    (var i = 0; o < lista.length; i++) ----- const baratos = produtos.filter(p => p.preco < 50);
+
+--- Assincronismo ---
+    .then() ----- const resposta = await fetch("https://api.com/dados")
+                  const dados = await resposta.json
+
+
+Exemplo de código antigo:
+
+    var usuario = "Maria"
+    var idade = "25"
+    function saudar(nome, ano) {
+        return "A " + nome + "tem " + ano + "anos."
+    }
+    document.write(saudar(usuario, idade))
+
+
+Exemplo de código atualizado:
+
+    const usuario = "Maria";
+    const idade = "25";
+
+    const saudar = (nome, ano) => 'A $[nome] tem ${idade} anos';
+    /* O (nome, ano) são apelidos genérico (os parâmetros) que dizem ao JavaScript que a máquina precisa receber essas duas informações para funcionar. Se não colocarmos, a linguagem dará um erro pois ele não espera receber essas informações */
+
+    // Alvo no HTML: <p id="mensagem"></p>
+    document.getElementById("mensagem").textContent = saudar(usuario, idade)
+    /* O saudar(usuario, idade) executa a função "saudar" e os parâmetros indicam que ele deve saudar com as informações "usuário" e "idade" */
