@@ -33,7 +33,7 @@ Exemplo de código atualizado:
     const usuario = "Maria";
     const idade = "25";
 
-    const saudar = (nome, ano) => 'A $[nome] tem ${idade} anos';
+    const saudar = (nome, ano) => 'A ${nome} tem ${idade} anos';
     /* O (nome, ano) são apelidos genérico (os parâmetros) que dizem ao JavaScript que a máquina precisa receber essas duas informações para funcionar. Se não colocarmos, a linguagem dará um erro pois ele não espera receber essas informações */
 
     // Alvo no HTML: <p id="mensagem"></p>
