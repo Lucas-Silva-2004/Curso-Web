@@ -6,6 +6,6 @@ if (2 == 2 && 'b' == 'a') {
     `
 } else {
     texto.innerHTML = `
-    Não está correto
+    Não está correto.
     `
 }
