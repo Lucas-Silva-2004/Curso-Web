@@ -1,12 +1,12 @@
 // String
-var texto = 'Olá, mundo!';
+let texto = 'Olá, mundo!';
 
 // Number
-var numero = 75;
-var valorFloat = 3.14;
+let numero = 75;
+let valorFloat = 3.14;
 
 // Boolean
-var booleano = true;
+let booleano = true;
 
 /* Ao recarregar o site, cada um dos alertas será exibido um atrás do outro */
 /* alert(valorFloat);
@@ -14,7 +14,7 @@ alert(numero);
 alert(texto);
  */
 
-var container = document.getElementById('texto-teste');
+let container = document.getElementById('texto-teste');
 /* Aqui eu declarei uma variável chamada "container" que armazena o elemento HTML com o ID "texto-teste" */
 
 /* O "document" representa o documento HTML carregado no navegador. Com ele, podemos acessar e manipular os elementos do */
