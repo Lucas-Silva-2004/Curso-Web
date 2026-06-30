@@ -1,19 +1,19 @@
 // NULL
 /* Representa a ausência intencional de qualquer valor */
-var teste = null;
+let teste = null;
 
 // Undefined
 /* Representa a ausência de valor (não inicializado) */
-var teste2 = undefined;
+let teste2 = undefined;
 
 console.log(teste);
 console.log(teste2);
 
 // Exemplo prático
-var nome;
+let nome;
 console.log(nome); // Saída: undefined (o sistema não sabe o que é)
 
-var sobrenome = null;
+let sobrenome = null;
 console.log(sobrenome); // Saída: null (eu decidi que, por enquanto, não há sobrenome)
 
 // Outros exemplos
