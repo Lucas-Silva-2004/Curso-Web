@@ -4,7 +4,7 @@ let operador = prompt("Agora digite o operador desejado [+], [-], [*], [/]");
 
 let resultado = document.getElementById("resultado");
 
-/* 1. Validação: isNaN checa se a conversão para número falhou. */
+/* Validação: isNaN checa se a conversão para número falhou. */
 if (isNaN(num1) || isNaN(num2) || !operador) {
     alert("Por favor, digite um caractere ou número válido.");
 
