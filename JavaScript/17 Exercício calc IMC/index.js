@@ -1,6 +1,7 @@
 let nome = prompt("Por favor, digite o seu nome: ");
 let altura = prompt("Informe sua altura em centímetros: ");
 altura = (altura / 100);
+/* A divisão da altura por 100 é para converter a altura em centímetros para metros */
 
 let peso = prompt("Agora digite o seu peso: ");
 peso = parseFloat(peso);
@@ -12,7 +13,7 @@ let classificacao;
 
 resultado = document.getElementById("resultado");
 
-if (M > 16) {
+if (M < 16) {
     classificacao = "Baixo peso, muito grave";
 } else if (M >= 16 && M <= 16.99) {
     classificacao = "Baixo peso, grave";
