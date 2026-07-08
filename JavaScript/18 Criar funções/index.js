@@ -9,7 +9,7 @@ function calcularAreaTerreno(largura, comprimento) {
     
     let area = largura * comprimento;
     return area;
-    /* O return area faz com que a função jogue para fora do bloco o resultado. Pois sem ele, a função não retornaria nada. */
+    /* O return area faz com que a função jogue para fora do bloco o resultado. Pois sem ele, a função não retornaria */
     }
 
 /* Liga a função e guarda o resultado na variável "area". */
