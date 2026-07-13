@@ -18,13 +18,13 @@ let resultado;
 switch (operador) {
     case "Soma":
         resultado = calcSoma();
-        texto.innerHTML = `Resultado: ${resultado()}`
+        texto.innerHTML = `Resultado: ${resultado}`
         console.log("A soma foi realizada com sucesso");
         break;
 
     case "Subtracao":
         resultado = calcSubtracao();
-        texto.innerHTML = `Resultado: ${resultado()}`
+        texto.innerHTML = `Resultado: ${resultado}`
         console.log("A subtração foi realizada com sucesso");
         break;
 }
