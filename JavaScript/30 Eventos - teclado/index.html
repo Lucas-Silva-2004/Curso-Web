@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - teclado</title>
+    
+    <style>
+        * {
+            font-family: verdana;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        input {
+            width: 800px;
+        }
+        
+    </style>    
+    
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <input type="text" onkeydown="acao()" placeholder="onkeydown (assim que aperta)">
+    <input type="text" onkeyup="acao()" placeholder="onkeyup (assim que solta a tecla)">
+    <input type="text" onkeypress="acao()" placeholder="onkeypress (Enquanto mantém a tecla pressionada)">
+</body>
+</html>

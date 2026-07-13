@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - mouse</title>
+    
+    <style>
+        * {
+            font-family: verdana;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 55px;
+        }
+
+        .quadrado {
+            height: 200px;
+            width: 200px;
+            background-color: #ccc;
+        }
+        
+    </style>    
+    
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="quadrado" onclick="acao()">onclick (um clique)</div>
+    <div class="quadrado" ondblclick="acao()">ondblclick (dois cliques)</div>
+    <div class="quadrado" onmouseup="acao()">onmouseup (após soltar o clique)</div>
+    <div class="quadrado" onmouseover="acao()">onmouseover (ao passar o mouse em cima)</div>
+    <br>
+    <div class="quadrado" onmouseout="acao()">onmouseout (após passar o mouse em cima e tirar do elemento)</div>
+    <div class="quadrado" onclick="acao()" onmouseout="acao2()">onclick e onmouseout (Primeiro evento quando clica e outro ao tirar o mouse de cima)</div>
+</body>
+</html>
