@@ -26,6 +26,10 @@ console.log(Math.trunc(f));
     2. Diferente do parseInt(), que converte uma string em um número inteiro, o Math.trunc() trabalha diretamente com números float.
 */
 
+// Math.abs(): retorna o valor absoluto de um número, ou seja, remove o sinal negativo de um número negativo. Caso seja positivo, ele retorna o mesmo valor.
+let g = -10.380;
+console.log(Math.abs(g));
+
 
 resultado.innerHTML = `
     O valor de ${a} com o método Math.ceil() é: ${Math.ceil(a)}. Pois 10.380 arredondado pra cima é 11.
@@ -37,4 +41,6 @@ resultado.innerHTML = `
     O valor aleatório entre 0 e 1 é: ${e}.
     <hr>
     O valor de ${f} com o método Math.trunc() é: ${Math.trunc(f)}. Pois 10.380 truncado é 10. Lembrando que o Math.trunc() remove totalmente a parte decimal sem arredondar.
+    <hr>
+    O valor de ${g} com o método Math.abs() é: ${Math.abs(g)}. Pois 10.380 em valor absoluto é 10.380.
 `
