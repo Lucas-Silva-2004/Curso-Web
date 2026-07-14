@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM - elementos da página</title>
+    <title>Eventos - formulário</title>
     
     <style>
         * {
@@ -27,12 +27,13 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <input type="text" onfocus="console.log('Recebeu o foco')" onblur="console.log('Perdeu o foco')"></input>
-
-    <select onchange="console.log('Estado foi modificado')"> <!-- O onchange fará com que o console.log dispare a mensagem toda vez que houver uma alteração na seleção -->
-        <option>--- Selecione ---</option>
-        <option value="1">Primeira opção</option>
-        <option value="2">Segunda opção</option>
-    </select>
+    <input
+        type="text"
+        placeholder="Digite o seu nome: "
+        id="nomeUsuario"
+        class="campoTexto"
+        name="nome"
+        ></input>
+        <!-- O name é importante para o envio de dados para o backend que inclui linguagens além do JS -->
 </body>
 </html>
