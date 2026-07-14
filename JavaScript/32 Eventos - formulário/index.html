@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - formulário</title>
+    
+    <style>
+        * {
+            font-family: verdana;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .quadrado {
+            width: 100%;
+            height: 200vh;
+        }
+        
+    </style>    
+    
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <input type="text" onfocus="console.log('Recebeu o foco')" onblur="console.log('Perdeu o foco')"></input>
+
+    <select onchange="console.log('Estado foi modificado')"> <!-- O onchange fará com que o console.log dispare a mensagem toda vez que houver uma alteração na seleção -->
+        <option>--- Selecione ---</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+</body>
+</html>
