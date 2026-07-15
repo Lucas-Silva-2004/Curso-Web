@@ -14,12 +14,16 @@
         .amarelo {
             background-color: yellow;
         }
+
+        .transparente {
+            background-color: transparent;
+        }
     </style>
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <input type="text" id="mensagem" onfocus="fundo('yellow')" onblur="fundo('transparent')">
+    <input type="text" id="mensagem" onfocus="fundoAmarelo()" onblur="fundoTransparente()">
 </body>
 
 </html>

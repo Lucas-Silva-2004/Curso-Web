@@ -1,6 +1,9 @@
-function fundo(corDeFundo) {
-    document.getElementById("mensagem").style.backgroundColor = corDeFundo;
-    console.log("teste");
+function fundoAmarelo(corDeFundo) {
+    document.getElementById("mensagem").className = 'amarelo';
+    console.log("Fundo amarelo");
 }
 
-document.get
+function fundoTransparente() {
+    document.getElementById("mensagem").className = 'transparente';
+    console.log("Fundo transparente");
+}
