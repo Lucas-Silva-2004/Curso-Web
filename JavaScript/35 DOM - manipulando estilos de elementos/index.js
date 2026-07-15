@@ -1,31 +1,5 @@
-// Função de distribuir caracteres entre números e letras
-
-function distribuiCaractere() {
-    // Seleciona o valor digitado
-    let caractere = document.getElementById('entrada').value; /* O .value pega o valor setado na id "entrada" */
-    console.log("Selecionado o valor digitado.")
-
-    // Limpar o campo de digitação
-    document.getElementById('entrada').value = ''; /* Mesmo limpando o campo de digitação, o valor do caractere já foi guardado na variável */
-
-    caractere.trim(); // Remove espaços nas extremidades do caractere caso sejam digitados
-
-    switch (caractere) {
-        case '0':
-        case '1':
-        case '2':
-        case '3':
-        case '4':
-        case '5':
-        case '6':
-        case '7':
-        case '8':
-        case '9':
-            document.getElementById("apenasNumeros").value += caractere; // adiciona o valor ao campo "apenasNumero" caso seja alguma das condições
-            break;
-        default:
-            document.getElementById("apenasLetras").value += caractere; // adiciona valor ao campo "apenasLetras" caso não seja nenhuma delas, no caso letras.
-
-        // O sinal de += concatena os números e faz com que sejam adicionados ao invés de substituir, mantendo o histórico de caracteres no campo.
-    }
+function modificaEstilo(corDeFundo) {
+    document.getElementById("quadrado").style.backgroundColor = corDeFundo; /* acessar a propriedade "style", mais especificamente o background-color, e atribuir a cor de fundo que foi recebida por parâmetro. */
 }
+
+// Basicamente, cada botão possui o onClick com o atributo "modificaEstilo" e cada um com suas devidas cores. No JS, atribuimos uma função ao "ModificaEstilo" que recebe as cores como parâmetro "corDeFundo", resgata a id do quadrado e aplica a cor ao quadrado de acordo com o que foi definido em cada botão.
