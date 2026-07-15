@@ -6,24 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade input</title>
 
-    <style>
-        * {
-            font-family: verdana;
-        }
-
-        .amarelo {
-            background-color: yellow;
-        }
-
-        .transparente {
-            background-color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="">
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <input type="text" id="mensagem" onfocus="fundoAmarelo()" onblur="fundoTransparente()">
+    <input type="text" id="caixaTexto" onfocus="fundoAmarelo()" onblur="sairFoco()">
 </body>
 
 </html>

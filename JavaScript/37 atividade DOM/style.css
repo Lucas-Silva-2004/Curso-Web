@@ -1,0 +1,19 @@
+* {
+    font-family: verdana;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.transparente {
+    background-color: transparent;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
