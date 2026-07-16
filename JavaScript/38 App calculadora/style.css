@@ -15,6 +15,7 @@ body {
     width: 425px;
     height: 620px;
     /* box-sizing: border-box; */
+    box-shadow: 4px 4px 7px black;
     background-color: rgb(53, 53, 53);
     overflow: hidden; /* Esconde qualquer elemento que ultrapassar o tamanho da calculadora, como o topoTela, por exemplo */
 }
@@ -30,6 +31,11 @@ body {
 .estiloTela {
     width: 70%;
     height: 50px;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    text-align: end;
+    background-color: rgb(216, 216, 216);
+    color: rgba(0, 0, 0, 0.699);
 }
 
 #areaBotoes {
@@ -52,7 +58,7 @@ button {
     box-shadow: 2px 2px 3px black;
 }
 
-.coseno {
+.clear {
     grid-area: span 1 / span 2;
 }
 
