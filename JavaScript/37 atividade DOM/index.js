@@ -2,13 +2,13 @@
 let caixaTexto = document.getElementById("caixaTexto");
 
 // Mudar pra cor amarela ao entrar no foco
-function fundoAmarelo(corDeFundo) {
+const fundoAmarelo = (corDeFundo) => {
     caixaTexto.className = 'amarelo'; /* define o atributo CSS da classe "amarelo" */
     console.log("Fundo amarelo: entrou no foco");
 }
 
 // Sair do foco e o valor do input ser enviado
-function sairFoco() {
+const sairFoco = () => {
     let texto = caixaTexto.value; /* resgata o valor do input */
     console.log("Saiu do foco.");
 
