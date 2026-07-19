@@ -1,3 +1,12 @@
+/* Cores */
+:root {
+    --cor-primaria: rgb(53, 53, 53);
+    --cor-secundaria: rgb(39, 39, 39);
+    --cor-tela: rgb(216, 216, 216);
+    --cor-botoes: rgb(53, 53, 63);
+    --cor-apertar-botao: rgb(37, 37, 44);
+}
+
 * {
     font-family: verdana;
     margin: 0;
@@ -16,7 +25,7 @@ body {
     height: 620px;
     /* box-sizing: border-box; */
     box-shadow: 4px 4px 7px black;
-    background-color: rgb(53, 53, 53);
+    background-color: var(--cor-primaria);
     overflow: hidden; /* Esconde qualquer elemento que ultrapassar o tamanho da calculadora, como o topoTela, por exemplo */
 }
 
@@ -25,7 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px 0;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--cor-secundaria);
 }
 
 .estiloTela {
@@ -34,7 +43,7 @@ body {
     font-size: 1.5rem;
     padding-right: 10px;
     text-align: end;
-    background-color: rgb(216, 216, 216);
+    background-color: var(--cor-tela);
     color: rgba(0, 0, 0, 0.699);
 }
 
@@ -53,9 +62,13 @@ button {
     font-size: 1.2rem;
     border-radius: 8px;
     border-style: outset;
-    background-color: rgb(53, 53, 63);
+    background-color: var(--cor-botoes);
     color: white;
     box-shadow: 2px 2px 3px black;
+}
+
+button:active {
+    background-color: var(--cor-apertar-botao);
 }
 
 .clear {

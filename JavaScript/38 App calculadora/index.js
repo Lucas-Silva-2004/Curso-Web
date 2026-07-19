@@ -23,6 +23,6 @@ const calcular = (tipo, valor) => {
     }
 
     else {
-        tela.innerHTML = 'Erro desconhecido';
+        document.getElementById("tela") = 'Erro desconhecido';
     }
 }
