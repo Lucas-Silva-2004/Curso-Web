@@ -69,6 +69,8 @@ button {
 
 button:active {
     background-color: var(--cor-apertar-botao);
+    transform: scale(0.90);
+    color: yellow;
 }
 
 .clear {
