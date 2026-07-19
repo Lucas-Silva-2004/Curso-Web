@@ -22,14 +22,14 @@ body {
 #calculadora {
     border-radius: 20px;
     width: 425px;
-    height: 620px;
     /* box-sizing: border-box; */
     box-shadow: 4px 4px 7px black;
     background-color: var(--cor-primaria);
-    overflow: hidden; /* Esconde qualquer elemento que ultrapassar o tamanho da calculadora, como o topoTela, por exemplo */
+    /* overflow: hidden; */ /* Esconde qualquer elemento que ultrapassar o tamanho da calculadora, como o topoTela, por exemplo */
 }
 
 #topoCalculadora {
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +57,7 @@ body {
 }
 
 button {
-    width: 100%;
-    height: 100%;
+    padding: 20px;
     font-size: 1.2rem;
     border-radius: 8px;
     border-style: outset;
