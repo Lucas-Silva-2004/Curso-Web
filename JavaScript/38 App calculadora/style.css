@@ -29,7 +29,7 @@ body {
 }
 
 #topoCalculadora {
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body {
 }
 
 button {
-    padding: 20px;
+    padding: 20%;
     font-size: 1.2rem;
     border-radius: 8px;
     border-style: outset;
@@ -66,10 +66,11 @@ button {
     box-shadow: 2px 2px 3px black;
 }
 
+/* animação no button quando é clicado */
 button:active {
+    transform: scale(0.90); /* diminui o tamanho do botão durante o clique */
     background-color: var(--cor-apertar-botao);
-    transform: scale(0.90);
-    color: yellow;
+    box-shadow: 0 0 10px rgb(80, 80, 255);
 }
 
 .clear {

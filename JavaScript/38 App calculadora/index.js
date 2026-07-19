@@ -16,13 +16,14 @@ const calcular = (tipo, valor) => {
             
             document.getElementById("tela").value = valorCampo; 
         }
+
+        else {
+            document.getElementById("tela").value = 'Erro desconhecido';
+        }
     }
     
     else if (tipo === 'valor') {
         let valorCampo = document.getElementById('tela').value += valor; // Concatena os valores digitados de modo que os números sejam adicionados sem substituir os anteriores
     }
 
-    else {
-        document.getElementById("tela") = 'Erro desconhecido';
-    }
 }
